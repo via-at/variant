@@ -1,6 +1,6 @@
 (function () {
   
-  Variant.InputViewBehavior = [
+  var behaviors = [
     Polymer.PaperInputBehavior,
     Polymer.IronValidatableBehavior,
     Polymer.IronFormElementBehavior
@@ -11,7 +11,7 @@
    * The element will be recognized as a part of iron-form.
    */
   Variant.InputView = function (cls) {
-    Variant.applyBehaviors(cls, Variant.InputViewBehavior);
+    Variant.applyBehaviors(cls, behaviors);
     // The super class is Variant.View.
     Variant.View(cls);
   };

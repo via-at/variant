@@ -2,7 +2,7 @@
  */
 (function () {
   
-  Variant.ModelBehavior = [
+  var behaviors = [
     VA.ModelBehavior
   ];
   
@@ -15,7 +15,7 @@
    * 
    * See the description of Variant.Model to know how to use above properties.
    */
-  Variant.ModelValidProps = ['path', 'relationships', 'parents'];
+  var propNames = ['path', 'relationships', 'parents'];
   
   /**
    * Wraps the model behavior that makes an element model. The behavior is based on
@@ -35,8 +35,8 @@
    * See https://github.com/via-at/va-model/va-model-behavior to know more info.
    */
   Variant.Model = function (cls) {
-    Variant.applyBehaviors(cls, Variant.ModelBehavior);
-    Variant.applyProps(cls, Variant.ModelValidProps);
+    Variant.applyBehaviors(cls, behaviors);
+    Variant.applyProps(cls, propNames);
     Polymer(cls);
   };
   

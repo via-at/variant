@@ -1,6 +1,6 @@
 (function () {
   
-  Variant.ViewBehavior = [
+  var behaviors = [
     VA.LocalizeBehavior
   ];
   
@@ -9,7 +9,7 @@
    * based on app-localize-behavior.
    */
   Variant.View = function (cls) {
-    Variant.applyBehaviors(cls, Variant.ViewBehavior);
+    Variant.applyBehaviors(cls, behaviors);
     Polymer(cls);
   };
   
