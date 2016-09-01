@@ -35,8 +35,8 @@
    * See https://github.com/via-at/va-model/va-model-behavior to know more info.
    */
   Variant.Model = function (cls) {
-    applyBehaviors(cls, Variant.ModelBehavior);
-    applyProps(cls, Variant.ModelValidProps);
+    Variant.applyBehaviors(cls, Variant.ModelBehavior);
+    Variant.applyProps(cls, Variant.ModelValidProps);
     Polymer(cls);
   };
   

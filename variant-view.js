@@ -9,7 +9,7 @@
    * based on app-localize-behavior.
    */
   Variant.View = function (cls) {
-    applyBehaviors(cls, Variant.ViewBehavior);
+    Variant.applyBehaviors(cls, Variant.ViewBehavior);
     Polymer(cls);
   };
   

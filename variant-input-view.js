@@ -11,7 +11,7 @@
    * The element will be recognized as a part of iron-form.
    */
   Variant.InputView = function (cls) {
-    applyBehaviors(cls, Variant.InputViewBehavior);
+    Variant.applyBehaviors(cls, Variant.InputViewBehavior);
     // The super class is Variant.View.
     Variant.View(cls);
   };

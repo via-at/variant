@@ -10,7 +10,7 @@
    * Extends Variant.View. It wraps optimal behaviors for a page view.
    */
   Variant.Page = function (cls) {
-    applyBehaviors(cls, Variant.PageBehavior);
+    Variant.applyBehaviors(cls, Variant.PageBehavior);
     Variant.View(cls);
   }
   
