@@ -1,0 +1,20 @@
+<link rel="import" href="../bower_components/app-localize-behavior/app-localize-behavior.html">
+
+<script>
+  Variant.LocalizeBehaviorImpl = {
+    
+    properties: {
+      
+      language: {
+        value: function () {
+          return navigator.language.split('-')[0];
+        }
+      }
+    }
+  };
+  
+  Variant.LocalizeBehavior = [
+    Polymer.AppLocalizeBehavior,
+    Variant.LocalizeBehaviorImpl
+  ];
+</script>
