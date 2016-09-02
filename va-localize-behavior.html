@@ -1,8 +1,10 @@
 <link rel="import" href="../app-localize-behavior/app-localize-behavior.html">
 
 <script>
+(function () {
+  
   VA.LocalizeBehaviorImpl = {
-      
+    
     get locale() {
       return navigator.language.split('-')[0];
     },
@@ -18,7 +20,7 @@
       
     attached: function () {
       var url = VA.localeRoot + '/' + this.locale + '.json';
-      this.loadResources(this.resolveUrl(url));
+      this.loadResources(this.resolveUrl(url)); 
     }
   };
   
@@ -26,4 +28,6 @@
     Polymer.AppLocalizeBehavior,
     VA.LocalizeBehaviorImpl
   ];
+  
+}());
 </script>
