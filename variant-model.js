@@ -2,10 +2,6 @@
  */
 (function () {
   
-  var behaviors = [
-    VA.ModelBehavior
-  ];
-  
   /**
    * Variant.Model acceps the following properties.
    * 
@@ -35,7 +31,9 @@
    * See https://github.com/via-at/va-model/va-model-behavior to know more info.
    */
   Variant.Model = function (cls) {
-    Variant.applyBehaviors(cls, behaviors);
+    Variant.applyBehaviors(cls, [
+      VA.ModelBehavior
+    ]);
     Variant.applyProps(cls, propNames);
     Polymer(cls);
   };
