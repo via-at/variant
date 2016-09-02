@@ -13,12 +13,12 @@
         value: function () {
           return this.locale;
         }
-      },
-      
-      attached: function () {
-        var url = VA.localeRoot + '/' + this.locale + '.json';
-        this.loadResources(this.resolveUrl(url));
       }
+    },
+      
+    attached: function () {
+      var url = VA.localeRoot + '/' + this.locale + '.json';
+      this.loadResources(this.resolveUrl(url));
     }
   };
   
