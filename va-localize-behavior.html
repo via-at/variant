@@ -1,20 +1,29 @@
 <link rel="import" href="../app-localize-behavior/app-localize-behavior.html">
 
 <script>
-  Variant.LocalizeBehaviorImpl = {
+  VA.LocalizeBehaviorImpl = {
+      
+    get locale() {
+      return navigator.language.split('-')[0];
+    },
     
     properties: {
       
       language: {
         value: function () {
-          return navigator.language.split('-')[0];
+          return this.locale;
         }
+      },
+      
+      attached: function () {
+        var url = VA.localeRoot + '/' + this.locale + '.json';
+        this.loadResources(this.resolveUrl(url));
       }
     }
   };
   
-  Variant.LocalizeBehavior = [
+  VA.LocalizeBehavior = [
     Polymer.AppLocalizeBehavior,
-    Variant.LocalizeBehaviorImpl
+    VA.LocalizeBehaviorImpl
   ];
 </script>
