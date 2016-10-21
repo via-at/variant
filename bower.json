@@ -1,6 +1,6 @@
 {
   "name": "variant",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "variant.html",
   "license": "MIT",
   "authors": [
@@ -11,10 +11,10 @@
     "url": "https://github.com/via-at/variant.git"
   },
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.6.1",
+    "polymer": "Polymer/polymer#^1.7.0",
     "va-model": "via-at/va-model",
     "va-redirect-behavior": "via-at/va-redirect-behavior",
-    "app-localize-behavior": "^0.9.2",
+    "app-localize-behavior": "^0.10.0",
     "paper-input": "PolymerElements/paper-input",
     "iron-resizable-behavior": "PolymerElements/iron-resizable-behavior",
     "iron-validatable-behavior": "PolymerElements/iron-validatable-behavior",
