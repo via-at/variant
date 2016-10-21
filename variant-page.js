@@ -8,7 +8,6 @@
   Variant.Page = function (cls) {
     
     Variant.applyBehaviors(cls, [
-      Polymer.NeonAnimatableBehavior,
       Polymer.IronResizableBehavior,
       VA.RedirectBehavior
     ]);
