@@ -12,10 +12,7 @@
   },
   "dependencies": {
     "polymer": "Polymer/polymer#^1.7.0",
-    "va-model": "via-at/va-model",
-    "va-redirect-behavior": "via-at/va-redirect-behavior",
     "app-localize-behavior": "^0.10.0",
-    "paper-input": "PolymerElements/paper-input",
     "iron-resizable-behavior": "PolymerElements/iron-resizable-behavior",
     "iron-validatable-behavior": "PolymerElements/iron-validatable-behavior",
     "iron-form-element-behavior": "PolymerElements/iron-form-element-behavior"

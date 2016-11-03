@@ -1,7 +1,6 @@
 (function () {
   
   var behaviors = [
-    Polymer.PaperInputBehavior,
     Polymer.IronValidatableBehavior,
     Polymer.IronFormElementBehavior
   ];
